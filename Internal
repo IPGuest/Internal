@@ -1,10 +1,8 @@
---[[ 
+--[[
 
-
-Source created by @magreborn and @9xsp, If you're seeing this please report to a Administrator ASAP! Helping us with error like this
-can get you awarded!
-
-
+    Source created by @lustinherlove & Developed by @magreborn, If you're seeing this please report to us immediately and we will
+    award you ASAP!
+    
 --]]
 
 
@@ -54,7 +52,7 @@ local UserInputService = game:GetService("UserInputService")
 LoadSound.Name = "LoadSound"
 LoadSound.Parent = Executor
 LoadSound.SoundId = "rbxassetid://129797567433050"  
-LoadSound.Volume = 5
+LoadSound.Volume = 1
 LoadSound.PlayOnRemove = false
 
 Executor.Name = "Executor"
@@ -108,12 +106,15 @@ ScriptBox.Parent = Frame
 ScriptBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 ScriptBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScriptBox.BorderSizePixel = 0
-ScriptBox.Position = UDim2.new(0.015, 0, 0.032, 0)
+ScriptBox.Position = UDim2.new(0.0155902002, 0, 0.0318954811, 0)
 ScriptBox.Size = UDim2.new(0, 435, 0, 174)
+ScriptBox.ClearTextOnFocus = false
 ScriptBox.Font = Enum.Font.SourceSans
+ScriptBox.PlaceholderText = "-- <3 OT"
 ScriptBox.Text = ""
 ScriptBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 ScriptBox.TextSize = 14.000
+ScriptBox.TextWrapped = true
 ScriptBox.TextXAlignment = Enum.TextXAlignment.Left
 ScriptBox.TextYAlignment = Enum.TextYAlignment.Top
 
