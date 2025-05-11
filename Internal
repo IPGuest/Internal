@@ -1,1263 +1,185 @@
---[=[
- d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
-88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
-88      88    88    88            odD'      88      88    88 88ooo88 
-88  ooo 88    88    88          .88'        88      88    88 88~~~88 
-88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
- Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
-]=]
-
--- Instances: 95 | Scripts: 17 | Modules: 0 | Tags: 0
-local G2L = {};
-
--- StarterGui.Nester
-G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
-G2L["1"]["Name"] = [[Nester]];
-G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
-
-
--- StarterGui.Nester.NestFrame
-G2L["2"] = Instance.new("Frame", G2L["1"]);
-G2L["2"]["BorderSizePixel"] = 0;
-G2L["2"]["BackgroundColor3"] = Color3.fromRGB(31, 31, 31);
-G2L["2"]["Size"] = UDim2.new(0, 684, 0, 329);
-G2L["2"]["Position"] = UDim2.new(0.19562, 0, 0.21581, 0);
-G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2"]["Name"] = [[NestFrame]];
-
-
--- StarterGui.Nester.NestFrame.UICorner
-G2L["3"] = Instance.new("UICorner", G2L["2"]);
-G2L["3"]["CornerRadius"] = UDim.new(0, 4);
-
-
--- StarterGui.Nester.NestFrame.UIStroke
-G2L["4"] = Instance.new("UIStroke", G2L["2"]);
-G2L["4"]["Color"] = Color3.fromRGB(116, 116, 116);
-
-
--- StarterGui.Nester.NestFrame.Main
-G2L["5"] = Instance.new("Folder", G2L["2"]);
-G2L["5"]["Name"] = [[Main]];
-
-
--- StarterGui.Nester.NestFrame.Main.Yes
-G2L["6"] = Instance.new("Frame", G2L["5"]);
-G2L["6"]["BorderSizePixel"] = 0;
-G2L["6"]["BackgroundColor3"] = Color3.fromRGB(33, 33, 33);
-G2L["6"]["Size"] = UDim2.new(0, 684, 0, 55);
-G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6"]["Name"] = [[Yes]];
-G2L["6"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.Nester.NestFrame.Main.Yes.CL
-G2L["7"] = Instance.new("TextButton", G2L["6"]);
-G2L["7"]["BorderSizePixel"] = 0;
-G2L["7"]["TextSize"] = 14;
-G2L["7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["7"]["BackgroundTransparency"] = 1;
-G2L["7"]["Size"] = UDim2.new(0, 28, 0, 32);
-G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["Text"] = [[🔴]];
-G2L["7"]["Name"] = [[CL]];
-G2L["7"]["Position"] = UDim2.new(0.94203, 0, 0.2, 0);
-
-
--- StarterGui.Nester.NestFrame.Main.Yes.CL.LocalScript
-G2L["8"] = Instance.new("LocalScript", G2L["7"]);
-
-
-
--- StarterGui.Nester.NestFrame.Main.Yes.MI
-G2L["9"] = Instance.new("TextButton", G2L["6"]);
-G2L["9"]["BorderSizePixel"] = 0;
-G2L["9"]["TextSize"] = 14;
-G2L["9"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["9"]["BackgroundTransparency"] = 1;
-G2L["9"]["Size"] = UDim2.new(0, 28, 0, 32);
-G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9"]["Text"] = [[⚫️]];
-G2L["9"]["Name"] = [[MI]];
-G2L["9"]["Position"] = UDim2.new(0.8821, 0, 0.2, 0);
-
-
--- StarterGui.Nester.NestFrame.Main.Yes.MI.LocalScript
-G2L["a"] = Instance.new("LocalScript", G2L["9"]);
-
-
-
--- StarterGui.Nester.NestFrame.Main.ImageLabel
-G2L["b"] = Instance.new("ImageLabel", G2L["5"]);
-G2L["b"]["BorderSizePixel"] = 0;
-G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["b"]["Image"] = [[rbxassetid://94865172266439]];
-G2L["b"]["Size"] = UDim2.new(0, 65, 0, 55);
-G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b"]["BackgroundTransparency"] = 2;
-
-
--- StarterGui.Nester.NestFrame.Main.BackAttach
-G2L["c"] = Instance.new("ImageButton", G2L["5"]);
-G2L["c"]["BorderSizePixel"] = 0;
-G2L["c"]["BackgroundTransparency"] = 2;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c"]["Image"] = [[rbxassetid://82912832929134]];
-G2L["c"]["Size"] = UDim2.new(0, 28, 0, 27);
-G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c"]["Name"] = [[BackAttach]];
-G2L["c"]["Position"] = UDim2.new(0.51316, 0, 0.03343, 0);
-
-
--- StarterGui.Nester.NestFrame.Main.BackAttach.TTACK
-G2L["d"] = Instance.new("LocalScript", G2L["c"]);
-G2L["d"]["Name"] = [[TTACK]];
-
-
--- StarterGui.Nester.NestFrame.Home
-G2L["e"] = Instance.new("Folder", G2L["2"]);
-G2L["e"]["Name"] = [[Home]];
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu
-G2L["f"] = Instance.new("Frame", G2L["e"]);
-G2L["f"]["BorderSizePixel"] = 0;
-G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f"]["Size"] = UDim2.new(0, 684, 0, 274);
-G2L["f"]["Position"] = UDim2.new(0, 0, 0.16717, 0);
-G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f"]["Name"] = [[HomeMenu]];
-G2L["f"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG
-G2L["10"] = Instance.new("Folder", G2L["f"]);
-G2L["10"]["Name"] = [[IMG]];
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.ScrollingFrame
-G2L["11"] = Instance.new("ScrollingFrame", G2L["10"]);
-G2L["11"]["Active"] = true;
-G2L["11"]["BorderSizePixel"] = 0;
-G2L["11"]["ElasticBehavior"] = Enum.ElasticBehavior.Always;
-G2L["11"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11"]["Size"] = UDim2.new(0, 396, 0, 257);
-G2L["11"]["Position"] = UDim2.new(0.39234, 0, -0.00274, 0);
-G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["11"]["ScrollBarThickness"] = 5;
-G2L["11"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.ScrollingFrame.MainText
-G2L["12"] = Instance.new("TextBox", G2L["11"]);
-G2L["12"]["Name"] = [[MainText]];
-G2L["12"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["12"]["PlaceholderColor3"] = Color3.fromRGB(33, 118, 18);
-G2L["12"]["SizeConstraint"] = Enum.SizeConstraint.RelativeXX;
-G2L["12"]["BorderSizePixel"] = 0;
-G2L["12"]["TextWrapped"] = true;
-G2L["12"]["TextSize"] = 14;
-G2L["12"]["TextColor3"] = Color3.fromRGB(205, 205, 205);
-G2L["12"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["12"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
-G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["12"]["MultiLine"] = true;
-G2L["12"]["ClearTextOnFocus"] = false;
-G2L["12"]["PlaceholderText"] = [[print("Nest On Top")]];
-G2L["12"]["Size"] = UDim2.new(0, 501, 0, 461);
-G2L["12"]["Position"] = UDim2.new(0.05143, 0, 0.00727, 0);
-G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["Text"] = [[]];
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.ScrollingFrame.MainText.LocalScript
-G2L["13"] = Instance.new("LocalScript", G2L["12"]);
-G2L["13"]["Enabled"] = false;
-G2L["13"]["Disabled"] = true;
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.ScrollingFrame.MainText.UICorner
-G2L["14"] = Instance.new("UICorner", G2L["12"]);
-G2L["14"]["CornerRadius"] = UDim.new(0, 5);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.ScrollingFrame.MainText.TextBox
-G2L["15"] = Instance.new("TextBox", G2L["12"]);
-G2L["15"]["CursorPosition"] = -1;
-G2L["15"]["BorderSizePixel"] = 0;
-G2L["15"]["TextEditable"] = false;
-G2L["15"]["TextWrapped"] = true;
-G2L["15"]["TextSize"] = 14;
-G2L["15"]["TextColor3"] = Color3.fromRGB(227, 227, 227);
-G2L["15"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["15"]["BackgroundColor3"] = Color3.fromRGB(19, 19, 19);
-G2L["15"]["RichText"] = true;
-G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["15"]["MultiLine"] = true;
-G2L["15"]["ClearTextOnFocus"] = false;
-G2L["15"]["Size"] = UDim2.new(0, 20, 0, 461);
-G2L["15"]["Position"] = UDim2.new(-0.04167, 0, 0, 0);
-G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15"]["Text"] = [[]];
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.ScrollingFrame.MainText.TextBox.LocalScript
-G2L["16"] = Instance.new("LocalScript", G2L["15"]);
-
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.ScrollingFrame.MainText.TextBox.UICorner
-G2L["17"] = Instance.new("UICorner", G2L["15"]);
-G2L["17"]["CornerRadius"] = UDim.new(0, 5);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.ScrollingFrame.UICorner
-G2L["18"] = Instance.new("UICorner", G2L["11"]);
-G2L["18"]["CornerRadius"] = UDim.new(0, 5);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.ScrollingFrame.UIStroke
-G2L["19"] = Instance.new("UIStroke", G2L["11"]);
-G2L["19"]["Color"] = Color3.fromRGB(86, 86, 86);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script
-G2L["1a"] = Instance.new("Frame", G2L["10"]);
-G2L["1a"]["BorderSizePixel"] = 0;
-G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
-G2L["1a"]["Size"] = UDim2.new(0, 172, 0, 223);
-G2L["1a"]["Position"] = UDim2.new(0.12427, 0, -0.00071, 0);
-G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1a"]["Name"] = [[Script]];
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.UICorner
-G2L["1b"] = Instance.new("UICorner", G2L["1a"]);
-G2L["1b"]["CornerRadius"] = UDim.new(0, 4);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.UIStroke
-G2L["1c"] = Instance.new("UIStroke", G2L["1a"]);
-G2L["1c"]["Color"] = Color3.fromRGB(86, 86, 86);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.Universal.lua
-G2L["1d"] = Instance.new("Frame", G2L["1a"]);
-G2L["1d"]["BorderSizePixel"] = 0;
-G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["1d"]["Size"] = UDim2.new(0, 150, 0, 35);
-G2L["1d"]["Position"] = UDim2.new(0.06395, 0, 0.10762, 0);
-G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d"]["Name"] = [[Universal.lua]];
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.Universal.lua.UICorner
-G2L["1e"] = Instance.new("UICorner", G2L["1d"]);
-G2L["1e"]["CornerRadius"] = UDim.new(0, 12);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.Universal.lua.TextButton
-G2L["1f"] = Instance.new("TextButton", G2L["1d"]);
-G2L["1f"]["BorderSizePixel"] = 0;
-G2L["1f"]["TextSize"] = 16;
-G2L["1f"]["TextColor3"] = Color3.fromRGB(205, 205, 205);
-G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["1f"]["BackgroundTransparency"] = 1;
-G2L["1f"]["Size"] = UDim2.new(0, 150, 0, 35);
-G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1f"]["Text"] = [[Universal.lua]];
-G2L["1f"]["Position"] = UDim2.new(0.00225, 0, -0.02293, 0);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.Universal.lua.TextButton.Change
-G2L["20"] = Instance.new("LocalScript", G2L["1f"]);
-G2L["20"]["Name"] = [[Change]];
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.Universal.lua.UIStroke
-G2L["21"] = Instance.new("UIStroke", G2L["1d"]);
-G2L["21"]["Color"] = Color3.fromRGB(39, 39, 39);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.Universal.lua.ImageLabel
-G2L["22"] = Instance.new("ImageLabel", G2L["1d"]);
-G2L["22"]["BorderSizePixel"] = 0;
-G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["22"]["Image"] = [[rbxassetid://105711560261994]];
-G2L["22"]["Size"] = UDim2.new(0, 25, 0, 25);
-G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["22"]["BackgroundTransparency"] = 1;
-G2L["22"]["Position"] = UDim2.new(0.05333, 0, 0.14286, 0);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.TeamEsp.lua
-G2L["23"] = Instance.new("Frame", G2L["1a"]);
-G2L["23"]["BorderSizePixel"] = 0;
-G2L["23"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["23"]["Size"] = UDim2.new(0, 150, 0, 35);
-G2L["23"]["Position"] = UDim2.new(0.06395, 0, 0.30493, 0);
-G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["23"]["Name"] = [[TeamEsp.lua]];
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.TeamEsp.lua.UICorner
-G2L["24"] = Instance.new("UICorner", G2L["23"]);
-G2L["24"]["CornerRadius"] = UDim.new(0, 12);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.TeamEsp.lua.UIStroke
-G2L["25"] = Instance.new("UIStroke", G2L["23"]);
-G2L["25"]["Color"] = Color3.fromRGB(39, 39, 39);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.TeamEsp.lua.ImageLabel
-G2L["26"] = Instance.new("ImageLabel", G2L["23"]);
-G2L["26"]["BorderSizePixel"] = 0;
-G2L["26"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["26"]["Image"] = [[rbxassetid://105711560261994]];
-G2L["26"]["Size"] = UDim2.new(0, 25, 0, 25);
-G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["26"]["BackgroundTransparency"] = 1;
-G2L["26"]["Position"] = UDim2.new(0.05333, 0, 0.14286, 0);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.TeamEsp.lua.TextButton
-G2L["27"] = Instance.new("TextButton", G2L["23"]);
-G2L["27"]["BorderSizePixel"] = 0;
-G2L["27"]["TextSize"] = 16;
-G2L["27"]["TextColor3"] = Color3.fromRGB(205, 205, 205);
-G2L["27"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["27"]["BackgroundTransparency"] = 1;
-G2L["27"]["Size"] = UDim2.new(0, 150, 0, 35);
-G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27"]["Text"] = [[TeamEsp.lua]];
-G2L["27"]["Position"] = UDim2.new(0.00225, 0, -0.02293, 0);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.TeamEsp.lua.TextButton.Change
-G2L["28"] = Instance.new("LocalScript", G2L["27"]);
-G2L["28"]["Name"] = [[Change]];
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.IPTest.lua
-G2L["29"] = Instance.new("Frame", G2L["1a"]);
-G2L["29"]["BorderSizePixel"] = 0;
-G2L["29"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["29"]["Size"] = UDim2.new(0, 150, 0, 35);
-G2L["29"]["Position"] = UDim2.new(0.06395, 0, 0.50673, 0);
-G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["29"]["Name"] = [[IPTest.lua]];
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.IPTest.lua.UICorner
-G2L["2a"] = Instance.new("UICorner", G2L["29"]);
-G2L["2a"]["CornerRadius"] = UDim.new(0, 12);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.IPTest.lua.UIStroke
-G2L["2b"] = Instance.new("UIStroke", G2L["29"]);
-G2L["2b"]["Color"] = Color3.fromRGB(39, 39, 39);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.IPTest.lua.ImageLabel
-G2L["2c"] = Instance.new("ImageLabel", G2L["29"]);
-G2L["2c"]["BorderSizePixel"] = 0;
-G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["2c"]["Image"] = [[rbxassetid://105711560261994]];
-G2L["2c"]["Size"] = UDim2.new(0, 25, 0, 25);
-G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2c"]["BackgroundTransparency"] = 1;
-G2L["2c"]["Position"] = UDim2.new(0.05333, 0, 0.14286, 0);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.IPTest.lua.TextButton
-G2L["2d"] = Instance.new("TextButton", G2L["29"]);
-G2L["2d"]["BorderSizePixel"] = 0;
-G2L["2d"]["TextSize"] = 16;
-G2L["2d"]["TextColor3"] = Color3.fromRGB(205, 205, 205);
-G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2d"]["BackgroundTransparency"] = 1;
-G2L["2d"]["Size"] = UDim2.new(0, 150, 0, 35);
-G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["Text"] = [[IPTest.lua]];
-G2L["2d"]["Position"] = UDim2.new(0.01558, 0, -0.02293, 0);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.IPTest.lua.TextButton.Change
-G2L["2e"] = Instance.new("LocalScript", G2L["2d"]);
-G2L["2e"]["Name"] = [[Change]];
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.<Failed To Get Script
-G2L["2f"] = Instance.new("Frame", G2L["1a"]);
-G2L["2f"]["BorderSizePixel"] = 0;
-G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["2f"]["Size"] = UDim2.new(0, 150, 0, 35);
-G2L["2f"]["Position"] = UDim2.new(0.06395, 0, 0.713, 0);
-G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2f"]["Name"] = [[<Failed To Get Script]];
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.<Failed To Get Script.UICorner
-G2L["30"] = Instance.new("UICorner", G2L["2f"]);
-G2L["30"]["CornerRadius"] = UDim.new(0, 12);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.<Failed To Get Script.UIStroke
-G2L["31"] = Instance.new("UIStroke", G2L["2f"]);
-G2L["31"]["Color"] = Color3.fromRGB(39, 39, 39);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.<Failed To Get Script.ImageLabel
-G2L["32"] = Instance.new("ImageLabel", G2L["2f"]);
-G2L["32"]["BorderSizePixel"] = 0;
-G2L["32"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["32"]["Image"] = [[rbxassetid://105711560261994]];
-G2L["32"]["Size"] = UDim2.new(0, 25, 0, 25);
-G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["32"]["BackgroundTransparency"] = 1;
-G2L["32"]["Position"] = UDim2.new(0.05333, 0, 0.14286, 0);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.<Failed To Get Script.TextButton
-G2L["33"] = Instance.new("TextButton", G2L["2f"]);
-G2L["33"]["BorderSizePixel"] = 0;
-G2L["33"]["TextSize"] = 16;
-G2L["33"]["TextColor3"] = Color3.fromRGB(205, 205, 205);
-G2L["33"]["BackgroundColor3"] = Color3.fromRGB(21, 21, 21);
-G2L["33"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["33"]["BackgroundTransparency"] = 1;
-G2L["33"]["Size"] = UDim2.new(0, 150, 0, 35);
-G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["33"]["Text"] = [[<Failed To Get Script]];
-G2L["33"]["Position"] = UDim2.new(0.11558, 0, -0.02293, 0);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.<Failed To Get Script.TextButton.Change
-G2L["34"] = Instance.new("LocalScript", G2L["33"]);
-G2L["34"]["Name"] = [[Change]];
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.Buttops
-G2L["35"] = Instance.new("Folder", G2L["f"]);
-G2L["35"]["Name"] = [[Buttops]];
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.Buttops.EXE
-G2L["36"] = Instance.new("Frame", G2L["35"]);
-G2L["36"]["BorderSizePixel"] = 0;
-G2L["36"]["BackgroundColor3"] = Color3.fromRGB(255, 35, 76);
-G2L["36"]["Size"] = UDim2.new(0, 115, 0, 33);
-G2L["36"]["Position"] = UDim2.new(0.16501, 0, 0.84132, 0);
-G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["36"]["Name"] = [[EXE]];
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.Buttops.EXE.UICorner
-G2L["37"] = Instance.new("UICorner", G2L["36"]);
-G2L["37"]["CornerRadius"] = UDim.new(0, 12);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.Buttops.EXE.UIGradient
-G2L["38"] = Instance.new("UIGradient", G2L["36"]);
-G2L["38"]["Rotation"] = 65;
-G2L["38"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(210, 210, 210))};
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.Buttops.EXE.TextButton
-G2L["39"] = Instance.new("TextButton", G2L["36"]);
-G2L["39"]["BorderSizePixel"] = 0;
-G2L["39"]["TextSize"] = 20;
-G2L["39"]["TextColor3"] = Color3.fromRGB(205, 205, 205);
-G2L["39"]["BackgroundColor3"] = Color3.fromRGB(255, 36, 69);
-G2L["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["39"]["BackgroundTransparency"] = 1;
-G2L["39"]["Size"] = UDim2.new(0, 112, 0, 24);
-G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["39"]["Text"] = [[Execute]];
-G2L["39"]["Position"] = UDim2.new(-0.00221, 0, 0.11753, 0);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.Buttops.EXE.TextButton.UICorner
-G2L["3a"] = Instance.new("UICorner", G2L["39"]);
-G2L["3a"]["CornerRadius"] = UDim.new(0, 12);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.Buttops.EXE.TextButton.LocalScript
-G2L["3b"] = Instance.new("LocalScript", G2L["39"]);
-
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.Buttops.No?
-G2L["3c"] = Instance.new("Frame", G2L["35"]);
-G2L["3c"]["BorderSizePixel"] = 0;
-G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3c"]["Size"] = UDim2.new(0, 64, 0, 191);
-G2L["3c"]["Position"] = UDim2.new(0.013, 0, 0.083, 0);
-G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3c"]["Name"] = [[No?]];
-G2L["3c"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.Buttops.No?.H
-G2L["3d"] = Instance.new("ImageButton", G2L["3c"]);
-G2L["3d"]["BorderSizePixel"] = 0;
-G2L["3d"]["BackgroundTransparency"] = 1;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3d"]["ImageColor3"] = Color3.fromRGB(255, 39, 0);
-G2L["3d"]["Image"] = [[rbxassetid://93360748652696]];
-G2L["3d"]["Size"] = UDim2.new(0, 25, 0, 25);
-G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3d"]["Name"] = [[H]];
-G2L["3d"]["Position"] = UDim2.new(0.29688, 0, 0.3089, 0);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.Buttops.No?.H.LocalScript
-G2L["3e"] = Instance.new("LocalScript", G2L["3d"]);
-
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.Buttops.No?.S
-G2L["3f"] = Instance.new("ImageButton", G2L["3c"]);
-G2L["3f"]["BorderSizePixel"] = 0;
-G2L["3f"]["BackgroundTransparency"] = 1;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3f"]["ImageColor3"] = Color3.fromRGB(137, 137, 137);
-G2L["3f"]["Image"] = [[rbxassetid://91621047065358]];
-G2L["3f"]["Size"] = UDim2.new(0, 25, 0, 25);
-G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3f"]["Name"] = [[S]];
-G2L["3f"]["Position"] = UDim2.new(0.29688, 0, 0.52356, 0);
-
-
--- StarterGui.Nester.NestFrame.Home.HomeMenu.Buttops.No?.S.LocalScript
-G2L["40"] = Instance.new("LocalScript", G2L["3f"]);
-
-
-
--- StarterGui.Nester.NestFrame.Settings
-G2L["41"] = Instance.new("Folder", G2L["2"]);
-G2L["41"]["Name"] = [[Settings]];
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu
-G2L["42"] = Instance.new("Frame", G2L["41"]);
-G2L["42"]["Visible"] = false;
-G2L["42"]["BorderSizePixel"] = 0;
-G2L["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["42"]["Size"] = UDim2.new(0, 684, 0, 274);
-G2L["42"]["Position"] = UDim2.new(0, 0, 0.16717, 0);
-G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["42"]["Name"] = [[SettingsMenu]];
-G2L["42"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.IMG
-G2L["43"] = Instance.new("Folder", G2L["42"]);
-G2L["43"]["Name"] = [[IMG]];
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.IMG.Settings
-G2L["44"] = Instance.new("Frame", G2L["43"]);
-G2L["44"]["BorderSizePixel"] = 0;
-G2L["44"]["BackgroundColor3"] = Color3.fromRGB(25, 25, 25);
-G2L["44"]["Size"] = UDim2.new(0, 579, 0, 230);
-G2L["44"]["Position"] = UDim2.new(0.12427, 0, 0, 0);
-G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["44"]["Name"] = [[Settings]];
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.IMG.Settings.UIStroke
-G2L["45"] = Instance.new("UIStroke", G2L["44"]);
-G2L["45"]["Color"] = Color3.fromRGB(86, 86, 86);
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.IMG.Settings.UICorner
-G2L["46"] = Instance.new("UICorner", G2L["44"]);
-G2L["46"]["CornerRadius"] = UDim.new(0, 4);
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.IMG.Settings.Options
-G2L["47"] = Instance.new("Frame", G2L["44"]);
-G2L["47"]["BorderSizePixel"] = 0;
-G2L["47"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
-G2L["47"]["Size"] = UDim2.new(0, 127, 0, 178);
-G2L["47"]["Position"] = UDim2.new(0.02591, 0, 0.11304, 0);
-G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["47"]["Name"] = [[Options]];
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.IMG.Settings.Options.UICorner
-G2L["48"] = Instance.new("UICorner", G2L["47"]);
-G2L["48"]["CornerRadius"] = UDim.new(0, 4);
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.IMG.Settings.Options.UIStroke
-G2L["49"] = Instance.new("UIStroke", G2L["47"]);
-G2L["49"]["Color"] = Color3.fromRGB(86, 86, 86);
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.IMG.Settings.Options.TextLabel
-G2L["4a"] = Instance.new("TextLabel", G2L["47"]);
-G2L["4a"]["BorderSizePixel"] = 0;
-G2L["4a"]["TextSize"] = 25;
-G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["4a"]["TextColor3"] = Color3.fromRGB(205, 205, 205);
-G2L["4a"]["BackgroundTransparency"] = 1;
-G2L["4a"]["Size"] = UDim2.new(0, 76, 0, 44);
-G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4a"]["Text"] = [[Settings]];
-G2L["4a"]["Position"] = UDim2.new(0.17323, 0, 0.00891, 0);
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.IMG.Settings.Options.Op
-G2L["4b"] = Instance.new("Frame", G2L["47"]);
-G2L["4b"]["BorderSizePixel"] = 0;
-G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4b"]["Size"] = UDim2.new(0, 90, 0, 30);
-G2L["4b"]["Position"] = UDim2.new(0.13386, 0, 0.35637, 0);
-G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4b"]["Name"] = [[Op]];
-G2L["4b"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.IMG.Settings.Options.Op.UICorner
-G2L["4c"] = Instance.new("UICorner", G2L["4b"]);
-G2L["4c"]["CornerRadius"] = UDim.new(0, 4);
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.IMG.Settings.Options.Op.UIStroke
-G2L["4d"] = Instance.new("UIStroke", G2L["4b"]);
-G2L["4d"]["Color"] = Color3.fromRGB(86, 86, 86);
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.IMG.Settings.Options.Op.TextButton
-G2L["4e"] = Instance.new("TextButton", G2L["4b"]);
-G2L["4e"]["BorderSizePixel"] = 0;
-G2L["4e"]["TextSize"] = 14;
-G2L["4e"]["TextColor3"] = Color3.fromRGB(201, 201, 201);
-G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(35, 35, 35);
-G2L["4e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["4e"]["BackgroundTransparency"] = 1;
-G2L["4e"]["Size"] = UDim2.new(0, 90, 0, 30);
-G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4e"]["Text"] = [[Option]];
-G2L["4e"]["Position"] = UDim2.new(-0.00271, 0, -0.01919, 0);
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.IMG.Settings.Options.Op
-G2L["4f"] = Instance.new("Frame", G2L["47"]);
-G2L["4f"]["BorderSizePixel"] = 0;
-G2L["4f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4f"]["Size"] = UDim2.new(0, 90, 0, 30);
-G2L["4f"]["Position"] = UDim2.new(0.12598, 0, 0.5887, 0);
-G2L["4f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4f"]["Name"] = [[Op]];
-G2L["4f"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.IMG.Settings.Options.Op.UICorner
-G2L["50"] = Instance.new("UICorner", G2L["4f"]);
-G2L["50"]["CornerRadius"] = UDim.new(0, 4);
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.IMG.Settings.Options.Op.UIStroke
-G2L["51"] = Instance.new("UIStroke", G2L["4f"]);
-G2L["51"]["Color"] = Color3.fromRGB(86, 86, 86);
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.IMG.Settings.Options.Op.TextButton
-G2L["52"] = Instance.new("TextButton", G2L["4f"]);
-G2L["52"]["BorderSizePixel"] = 0;
-G2L["52"]["TextSize"] = 14;
-G2L["52"]["TextColor3"] = Color3.fromRGB(201, 201, 201);
-G2L["52"]["BackgroundColor3"] = Color3.fromRGB(35, 35, 35);
-G2L["52"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["52"]["BackgroundTransparency"] = 1;
-G2L["52"]["Size"] = UDim2.new(0, 90, 0, 30);
-G2L["52"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["52"]["Text"] = [[Option]];
-G2L["52"]["Position"] = UDim2.new(-0.00271, 0, -0.01919, 0);
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.IMG.Settings.Set
-G2L["53"] = Instance.new("Frame", G2L["44"]);
-G2L["53"]["BorderSizePixel"] = 0;
-G2L["53"]["BackgroundColor3"] = Color3.fromRGB(11, 11, 11);
-G2L["53"]["Size"] = UDim2.new(0, 381, 0, 174);
-G2L["53"]["Position"] = UDim2.new(0.27634, 0, 0.13043, 0);
-G2L["53"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["53"]["Name"] = [[Set]];
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.IMG.Settings.Set.UICorner
-G2L["54"] = Instance.new("UICorner", G2L["53"]);
-G2L["54"]["CornerRadius"] = UDim.new(0, 4);
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.IMG.Settings.Set.UIStroke
-G2L["55"] = Instance.new("UIStroke", G2L["53"]);
-G2L["55"]["Color"] = Color3.fromRGB(86, 86, 86);
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.Buttops
-G2L["56"] = Instance.new("Folder", G2L["42"]);
-G2L["56"]["Name"] = [[Buttops]];
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.Buttops.No?
-G2L["57"] = Instance.new("Frame", G2L["56"]);
-G2L["57"]["BorderSizePixel"] = 0;
-G2L["57"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["57"]["Size"] = UDim2.new(0, 64, 0, 191);
-G2L["57"]["Position"] = UDim2.new(0.01316, 0, 0.0832, 0);
-G2L["57"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["57"]["Name"] = [[No?]];
-G2L["57"]["BackgroundTransparency"] = 1;
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.Buttops.No?.H
-G2L["58"] = Instance.new("ImageButton", G2L["57"]);
-G2L["58"]["BorderSizePixel"] = 0;
-G2L["58"]["BackgroundTransparency"] = 1;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["58"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["58"]["ImageColor3"] = Color3.fromRGB(137, 137, 137);
-G2L["58"]["Image"] = [[rbxassetid://93360748652696]];
-G2L["58"]["Size"] = UDim2.new(0, 25, 0, 25);
-G2L["58"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["58"]["Name"] = [[H]];
-G2L["58"]["Position"] = UDim2.new(0.29688, 0, 0.3089, 0);
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.Buttops.No?.H.LocalScript
-G2L["59"] = Instance.new("LocalScript", G2L["58"]);
-
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.Buttops.No?.S
-G2L["5a"] = Instance.new("ImageButton", G2L["57"]);
-G2L["5a"]["BorderSizePixel"] = 0;
-G2L["5a"]["BackgroundTransparency"] = 1;
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["5a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5a"]["ImageColor3"] = Color3.fromRGB(255, 39, 0);
-G2L["5a"]["Image"] = [[rbxassetid://91621047065358]];
-G2L["5a"]["Size"] = UDim2.new(0, 25, 0, 25);
-G2L["5a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5a"]["Name"] = [[S]];
-G2L["5a"]["Position"] = UDim2.new(0.29688, 0, 0.52356, 0);
-
-
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.Buttops.No?.S.LocalScript
-G2L["5b"] = Instance.new("LocalScript", G2L["5a"]);
-
-
-
--- StarterGui.Nester.NestFrame.UIDrag
-G2L["5c"] = Instance.new("LocalScript", G2L["2"]);
-G2L["5c"]["Name"] = [[UIDrag]];
-
-
--- StarterGui.Nester.LocalScript
-G2L["5d"] = Instance.new("LocalScript", G2L["1"]);
-G2L["5d"]["Enabled"] = false;
-G2L["5d"]["Disabled"] = true;
-
-
--- StarterGui.Nester.Secret
-G2L["5e"] = Instance.new("Frame", G2L["1"]);
-G2L["5e"]["Visible"] = false;
-G2L["5e"]["BorderSizePixel"] = 0;
-G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5e"]["Size"] = UDim2.new(0, 763, 0, 388);
-G2L["5e"]["Position"] = UDim2.new(0.22646, 0, 0.16402, 0);
-G2L["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5e"]["Name"] = [[Secret]];
-
-
--- StarterGui.Nester.Say
-G2L["5f"] = Instance.new("LocalScript", G2L["1"]);
-G2L["5f"]["Name"] = [[Say]];
-
-
--- StarterGui.Nester.NestFrame.Main.Yes.CL.LocalScript
-local function C_8()
-local script = G2L["8"];
-	local button = script.Parent.Parent:WaitForChild("CL")
-	local Clos = script.Parent.Parent.Parent.Parent.Parent.Parent:WaitForChild("Nester")
-	
-	button.MouseButton1Click:Connect(function()
-		if Clos and Clos.Parent then
-			Clos:Destroy()
-		else
-			warn("Heh")
-		end
-	end)
-end;
-task.spawn(C_8);
--- StarterGui.Nester.NestFrame.Main.Yes.MI.LocalScript
-local function C_a()
-local script = G2L["a"];
-	local button = script.Parent.Parent:WaitForChild("CL")
-	local Clos = script.Parent.Parent.Parent.Parent.Parent.Parent:WaitForChild("Nester")
-	
-	local function err()
-		task.wait(0.855)
-		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "🥴",
-			Text = "We are currently working on the Opener, can't minimize rn",
-			Duration = 5
-		})
-	end
-	
-	local function LOLerr()
-		task.wait(0.855)
-		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "😭",
-			Text = "Lol?",
-			Duration = 5
-		})
-	end
-	
-	button.MouseButton1Click:Connect(function()
-		err()
-	end)
-end;
-task.spawn(C_a);
--- StarterGui.Nester.NestFrame.Main.BackAttach.TTACK
-local function C_d()
-local script = G2L["d"];
-	local BackdoorButton = script.Parent.Parent:WaitForChild("BackAttach")
-	local Players = game:GetService("Players")
-	local StarterGui = game:GetService("StarterGui")
-	
-	local function FindPlayerPID(player)
-		for attrName, attrValue in pairs(player:GetAttributes()) do
-			if type(attrValue) == "number" or tostring(attrValue):match("^%d+$") then
-				return tostring(attrValue)
-			end
-		end
-	
-		for _, prop in pairs({"PID", "PlayerId", "UserId", "Token", "PlayerToken"}) do
-			if player[prop] and (type(player[prop]) == "number" or tostring(player[prop]):match("^%d+$")) then
-				return tostring(player[prop])
-			end
-		end
-	
-		if player.Character then
-			for _, descendant in pairs(player.Character:GetDescendants()) do
-				if descendant:IsA("IntValue") or descendant:IsA("NumberValue") then
-					if descendant.Name:lower():match("pid") then
-						return tostring(descendant.Value)
-					end
-				end
-			end
-		end
-	
-		if player:FindFirstChild("PlayerGui") then
-			for _, guiElement in pairs(player.PlayerGui:GetDescendants()) do
-				if guiElement:GetAttribute("PID") then
-					return tostring(guiElement:GetAttribute("PID"))
-				end
-			end
-		end
-	
-		return nil
-	end
-	
-	local function FireNestBackdoor(pid)
-		for _, service in pairs({
-			game.ReplicatedStorage,
-			game.ServerScriptService,
-			game.ServerStorage,
-			game.Workspace,
-			game.ReplicatedFirst
-			}) do
-			local nest = service:FindFirstChild("Nest")
-			if nest and nest:IsA("RemoteEvent") then
-				nest:FireServer(pid) 
-				return true
-			end
-		end
-		return false
-	end
-	
-	local function ShowResults(pid, backdoorFired)
-		if backdoorFired then
-			StarterGui:SetCore("SendNotification", {
-				Title = pid and "✅ Success" or "⚠️ Partial Success",
-				Text = pid and ("PID Found: " .. pid) or "Backdoor fired, but no PID found.",
-				Duration = 5,
-			})
-		else
-			StarterGui:SetCore("SendNotification", {
-				Title = "❌ Failed",
-				Text = "Nest backdoor not found!",
-				Duration = 5,
-			})
-		end
-	end
-	
-	BackdoorButton.MouseButton1Click:Connect(function()
-		local player = Players.LocalPlayer
-		local pid = FindPlayerPID(player)
-		local backdoorFired = FireNestBackdoor(pid)
-		task.wait(0.5)
-		ShowResults(pid, backdoorFired)
-	end)
-end;
-task.spawn(C_d);
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.ScrollingFrame.MainText.TextBox.LocalScript
-local function C_16()
-local script = G2L["16"];
-	local editor = script.Parent.Parent.Parent:WaitForChild("MainText")
-	local lineNumbersBox = script.Parent.Parent:WaitForChild("TextBox")
-	
-	local function updateLineNumbers()
-		local lines = string.split(editor.Text, "\n")
-		local lineNumberText = ""
-	
-		local maxDigits = #tostring(math.max(#lines, 1))
-		local maxWidth = maxDigits * 8 + 12 
-	
-		lineNumbersBox.Size = UDim2.new(0, maxWidth, 1, 0)
-	
-		for i = 1, #lines do
-			lineNumberText = lineNumberText .. string.format("%"..maxDigits.."d", i) .. "\n"
-		end
-	
-		if #lineNumberText > 0 then
-			lineNumberText = lineNumberText:sub(1, #lineNumberText - 1)
-		end
-	
-		lineNumbersBox.Text = lineNumberText
-		lineNumbersBox.CanvasPosition = Vector2.new(0, editor.CanvasPosition.Y)
-	
-		lineNumbersBox.TextXAlignment = Enum.TextXAlignment.Right
-		lineNumbersBox.TextYAlignment = Enum.TextYAlignment.Top
-		lineNumbersBox.TextWrapped = false
-		lineNumbersBox.ScrollBarThickness = 0
-	end
-	
-	editor.Changed:Connect(function(property)
-		if property == "Text" or property == "TextBounds" or property == "AbsoluteSize" then
-			updateLineNumbers()
-		end
-	end)
-	
-	editor:GetPropertyChangedSignal("CanvasPosition"):Connect(function()
-		lineNumbersBox.CanvasPosition = Vector2.new(0, editor.CanvasPosition.Y)
-	end)
-	
-	editor.Focused:Connect(updateLineNumbers)
-	editor:GetPropertyChangedSignal("AbsoluteSize"):Connect(updateLineNumbers)
-	
-	updateLineNumbers()
-end;
-task.spawn(C_16);
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.Universal.lua.TextButton.Change
-local function C_20()
-local script = G2L["20"];
-	local This = script.Parent.Parent:WaitForChild("TextButton")
-	local edpo = script.Parent.Parent.Parent.Parent.ScrollingFrame:WaitForChild("MainText")
-	
-	This.MouseButton1Click:Connect(function()
-		local SetText = edpo.Text
-	
-		edpo.Text = "loadstring(game:HttpGet('https://raw.githubusercontent.com/MiRw3b/c00lgui-v3rx/main/c00lguiv3rx.lua'))()"
-	end)
-end;
-task.spawn(C_20);
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.TeamEsp.lua.TextButton.Change
-local function C_28()
-local script = G2L["28"];
-	local This = script.Parent.Parent:WaitForChild("TextButton")
-	local edpo = script.Parent.Parent.Parent.Parent.ScrollingFrame:WaitForChild("MainText")
-	
-	This.MouseButton1Click:Connect(function()
-		local SetText = edpo.Text
-	
-		edpo.Text = "loadstring(game:HttpGet('https://github.com/alyssagithub/Scripts/raw/main/FrostByte/Initiate.lua'))()"
-	end)
-end;
-task.spawn(C_28);
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.IPTest.lua.TextButton.Change
-local function C_2e()
-local script = G2L["2e"];
-	local This = script.Parent.Parent:WaitForChild("TextButton")
-	local edpo = script.Parent.Parent.Parent.Parent.ScrollingFrame:WaitForChild("MainText")
-	
-	This.MouseButton1Click:Connect(function()
-		local SetText = edpo.Text
-	
-		edpo.Text = "loadstring(game:HttpGet('https://pastebin.com/raw/3WK0WN9L'))()"
-	end)
-end;
-task.spawn(C_2e);
--- StarterGui.Nester.NestFrame.Home.HomeMenu.IMG.Script.<Failed To Get Script.TextButton.Change
-local function C_34()
-local script = G2L["34"];
-	local This = script.Parent.Parent:WaitForChild("TextButton")
-	local edpo = script.Parent.Parent.Parent.Parent.ScrollingFrame:WaitForChild("MainText")
-	
-	This.MouseButton1Click:Connect(function()
-		local SetText = edpo.Text
-	
-		edpo.Text = "<Error"
-	end)
-end;
-task.spawn(C_34);
--- StarterGui.Nester.NestFrame.Home.HomeMenu.Buttops.EXE.TextButton.LocalScript
-local function C_3b()
-local script = G2L["3b"];
-	-- Find any RemoteEvent in ReplicatedStorage
-	local ReplicatedStorage = game:GetService("ReplicatedStorage")
-	local remoteEvent
-	
-	-- Loop through children to find any RemoteEvent
-	for _, child in ipairs(ReplicatedStorage:GetChildren()) do
-		if child:IsA("RemoteEvent") then
-			remoteEvent = child
-			break
-		end
-	end
-	
-	local runBtn = script.Parent.Parent:WaitForChild("TextButton")
-	local Main = script.Parent.Parent.Parent.Parent.IMG.ScrollingFrame:WaitForChild("MainText")
-	
-	runBtn.MouseButton1Click:Connect(function()
-		if runBtn.Active == true and remoteEvent then
-			local GetText = Main.Text
-	
-			local function executeCode(code)
-				if string.find(code, "require%(") then
-					local success, result = pcall(function()
-						return loadstring("return "..code)()
-					end)
-					if success then
-						return result
-					else
-						warn("Require execution error:", result)
-					end
-				end
-	
-				local success, err = pcall(function()
-					local fn = loadstring(code)
-					if fn then
-						fn()
-					end
-				end)
-	
-				if not success then
-					warn("Execution error:", err)
-				end
-			end
-	
-			-- Fire server with the code (optional use: for auditing or triggering server-side behavior)
-			remoteEvent:FireServer(GetText)
-	
-			executeCode(GetText)
-		else
-			warn("RemoteEvent not found or button not active")
-		end
-	end)
-end;
-task.spawn(C_3b);
--- StarterGui.Nester.NestFrame.Home.HomeMenu.Buttops.No?.H.LocalScript
-local function C_3e()
-local script = G2L["3e"];
-	local HomeMenu = script.Parent.Parent.Parent.Parent.Parent:WaitForChild("HomeMenu")
-	local SettingsMenu = script.Parent.Parent.Parent.Parent.Parent.Parent.Settings:WaitForChild("SettingsMenu")
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if not HomeMenu.Visible then
-	
-			SettingsMenu.Visible = false
-	
-			HomeMenu.Visible = true
-		else
-	
-			game:GetService("StarterGui"):SetCore("SendNotification", {
-				Title = "🚫",
-				Text = "Already Open",
-				Duration = 5
-			})
-		end
-	end)
-end;
-task.spawn(C_3e);
--- StarterGui.Nester.NestFrame.Home.HomeMenu.Buttops.No?.S.LocalScript
-local function C_40()
-local script = G2L["40"];
-	local SettingsMenu = script.Parent.Parent.Parent.Parent.Parent.Parent.Settings:WaitForChild("SettingsMenu")
-	local HomeMenu = script.Parent.Parent.Parent.Parent.Parent.Parent.Home:WaitForChild("HomeMenu")
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if not SettingsMenu.Visible then
-	
-			SettingsMenu.Visible = true
-	
-			HomeMenu.Visible = false
-		else
-			game:GetService("StarterGui"):SetCore("SendNotification", {
-				Title = "🚫",
-				Text = "Already Open",
-				Duration = 5
-			})
-		end
-	end)
-end;
-task.spawn(C_40);
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.Buttops.No?.H.LocalScript
-local function C_59()
-local script = G2L["59"];
-	local SettingsMenu = script.Parent.Parent.Parent.Parent.Parent.Parent.Settings:WaitForChild("SettingsMenu")
-	local HomeMenu = script.Parent.Parent.Parent.Parent.Parent.Parent.Home:WaitForChild("HomeMenu")
-	local TweenService = game:GetService("TweenService")
-	
-	local function fadeInGui(guiObject)
-	
-		if guiObject:IsA("GuiObject") then
-			guiObject.Visible = true
-			local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut)
-			local tween = TweenService:Create(guiObject, tweenInfo, {Transparency = 0})
-			tween:Play()
-		end
-	
-		for _, child in ipairs(guiObject:GetDescendants()) do
-			if child:IsA("GuiObject") then
-				child.Visible = true
-				local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut)
-				local tween = TweenService:Create(child, tweenInfo, {Transparency = 0})
-				tween:Play()
-			end
-		end
-	end
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if not HomeMenu.Visible then
-	
-			SettingsMenu.Visible = false
-			HomeMenu.Visible = true
-	
-			fadeInGui(HomeMenu)
-		else
-			game:GetService("StarterGui"):SetCore("SendNotification", {
-				Title = "🚫",
-				Text = "Already Open",
-				Duration = 5
-			})
-		end
-	end)
-end;
-task.spawn(C_59);
--- StarterGui.Nester.NestFrame.Settings.SettingsMenu.Buttops.No?.S.LocalScript
-local function C_5b()
-local script = G2L["5b"];
-	local SettingsMenu = script.Parent.Parent.Parent.Parent.Parent.Parent.Settings:WaitForChild("SettingsMenu")
-	local HomeMenu = script.Parent.Parent.Parent.Parent.Parent.Parent.Home:WaitForChild("HomeMenu")
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if not SettingsMenu.Visible then
-	
-			SettingsMenu.Visible = true
-	
-			HomeMenu.Visible = false
-		else
-			game:GetService("StarterGui"):SetCore("SendNotification", {
-				Title = "🚫",
-				Text = "Already Open",
-				Duration = 5
-			})
-		end
-	end)
-end;
-task.spawn(C_5b);
--- StarterGui.Nester.NestFrame.UIDrag
-local function C_5c()
-local script = G2L["5c"];
-	-- Made by Real_IceyDev (@lceyDex) --
-	-- Simple UI dragger (PC Only/Any device that has a mouse) --
-	
-	local UIS = game:GetService('UserInputService')
-	local frame = script.Parent
-	local dragToggle = nil
-	local dragSpeed = 0.25
-	local dragStart = nil
-	local startPos = nil
-	
-	local function updateInput(input)
-		local delta = input.Position - dragStart
-		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
-	end
-	
-	frame.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-			dragToggle = true
-			dragStart = input.Position
-			startPos = frame.Position
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragToggle = false
-				end
-			end)
-		end
-	end)
-	
-	UIS.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			if dragToggle then
-				updateInput(input)
-			end
-		end
-	end)
-end;
-task.spawn(C_5c);
--- StarterGui.Nester.Say
-local function C_5f()
-local script = G2L["5f"];
-	local Player = game.Players.LocalPlayer
-	
-	local function Test()
-		local success, errorMsg = pcall(function()
-			local TextChatService = game:GetService("TextChatService")
-	
-			if not TextChatService:FindFirstChild("TextChannels") then
-				TextChatService:WaitForChild("TextChannels")
-			end
-	
-			local channel = TextChatService.TextChannels.RBXGeneral
-			channel:SendAsync("NEST ON TOP!")
-		end)
-	
-		if not success then
-			warn("Failed to send message: " .. tostring(errorMsg))
-		end
-	end
-	
-	if Player.AccountAge >= 1 then
-		Test()
-	end
-end;
-task.spawn(C_5f);
-
-return G2L["1"], require;
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+local Executor = Instance.new("ScreenGui")
+local TopBar = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local ScriptBox = Instance.new("TextBox")
+local Clear = Instance.new("TextButton")
+local Execute = Instance.new("TextButton")
+local EnableDisable = Instance.new("Frame")
+local ImageButton = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+
+--Properties:
+Executor.Name = "Executor"
+Executor.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Executor.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TopBar.Name = "TopBar"
+TopBar.Parent = Executor
+TopBar.BackgroundColor3 = Color3.fromRGB(85, 125, 255)
+TopBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TopBar.BorderSizePixel = 0
+TopBar.Position = UDim2.new(0.287383169, 0, 0.305970162, 0)
+TopBar.Size = UDim2.new(0, 449, 0, 18)
+
+Close.Name = "Close"
+Close.Parent = TopBar
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.92650336, 0, 0, 0)
+Close.Size = UDim2.new(0, 33, 0, 24)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "^"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 29.000
+
+TextLabel.Parent = TopBar
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0155902002, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 193, 0, 18)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "<3 Internal"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+Frame.Parent = TopBar
+Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(2.71871528e-07, 0, 0.999999166, 0)
+Frame.Size = UDim2.new(0, 448, 0, 235)
+
+ScriptBox.Name = "ScriptBox"
+ScriptBox.Parent = Frame
+ScriptBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+ScriptBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScriptBox.BorderSizePixel = 0
+ScriptBox.Position = UDim2.new(0.0155902002, 0, 0.0318954811, 0)
+ScriptBox.Size = UDim2.new(0, 435, 0, 174)
+ScriptBox.Font = Enum.Font.SourceSans
+ScriptBox.Text = ""
+ScriptBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptBox.TextSize = 14.000
+ScriptBox.TextXAlignment = Enum.TextXAlignment.Left
+ScriptBox.TextYAlignment = Enum.TextYAlignment.Top
+
+Clear.Name = "Clear"
+Clear.Parent = Frame
+Clear.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.554565728, 0, 0.807843149, 0)
+Clear.Size = UDim2.new(0, 193, 0, 39)
+Clear.Font = Enum.Font.SourceSans
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
+Clear.TextSize = 14.000
+
+Execute.Name = "Execute"
+Execute.Parent = Frame
+Execute.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.0155902002, 0, 0.807843149, 0)
+Execute.Size = UDim2.new(0, 193, 0, 39)
+Execute.Font = Enum.Font.SourceSans
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute.TextSize = 14.000
+
+EnableDisable.Name = "Enable/Disable"
+EnableDisable.Parent = Executor
+EnableDisable.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+EnableDisable.BackgroundTransparency = 1.000
+EnableDisable.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EnableDisable.BorderSizePixel = 0
+EnableDisable.Position = UDim2.new(0.429906547, 0, 0.0895522386, 0)
+EnableDisable.Size = UDim2.new(0, 49, 0, 49)
+EnableDisable.Visible = false
+
+ImageButton.Parent = EnableDisable
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Size = UDim2.new(0, 49, 0, 49)
+ImageButton.Image = "rbxassetid://116178165142170"
+
+UICorner.CornerRadius = UDim.new(0, 20)
+UICorner.Parent = ImageButton
+
+-- Close Button Functionality
+local isOpen = true
+Close.MouseButton1Click:Connect(function()
+    isOpen = not isOpen
+
+    -- Toggle visibility of the frame
+    Frame.Visible = isOpen
+
+    -- Change button text
+    Close.Text = isOpen and "^" or ">"
+
+    -- Change button position
+    Close.Position = isOpen
+        and UDim2.new(0.927, 0, 0, 0)
+        or UDim2.new(0.927, 0, -0.167, 0)
+end)
+
+-- Script Execution (Execute Button)
+Execute.MouseButton1Click:Connect(function()
+    local scriptToExecute = ScriptBox.Text -- Get the script from the textbox
+    local success, errorMessage = pcall(function()
+        loadstring(scriptToExecute)() -- Try running the script
+    end)
+
+    if not success then
+        warn("Script execution failed: " .. errorMessage) -- Print the error if execution fails
+    end
+end)
+
+-- Clear Button
+Clear.MouseButton1Click:Connect(function()
+    ScriptBox.Text = ""  -- Clear the script box text
+end)
+
+-- Draggable TopBar
+local UserInputService = game:GetService("UserInputService")
+local dragging = false
+local dragStart, startPos
+
+TopBar.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        dragging = true
+        dragStart = input.Position
+        startPos = TopBar.Position
+
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragging = false
+            end
+        end)
+    end
+end)
+
+-- Update position on move
+UserInputService.InputChanged:Connect(function(input)
+    if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+        local delta = input.Position - dragStart
+        TopBar.Position = UDim2.new(
+            startPos.X.Scale,
+            startPos.X.Offset + delta.X,
+            startPos.Y.Scale,
+            startPos.Y.Offset + delta.Y
+        )
+    end
+end)
