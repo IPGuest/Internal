@@ -1,7 +1,12 @@
--- Gui to Lua
--- Version: 3.2
+--[[ 
 
--- Instances:
+
+Source created by @magreborn and @9xsp, If you're seeing this please report to a Administrator ASAP! Helping us with error like this
+can get you awarded!
+
+
+--]]
+
 
 local Executor = Instance.new("ScreenGui")
 local TopBar = Instance.new("Frame")
@@ -17,7 +22,6 @@ local UICorner = Instance.new("UICorner")
 local LoadSound = Instance.new("Sound")
 local TweenService = game:GetService("TweenService")
 
--- Helper function to tween a GUI object’s transparency
 local function tweenTransparency(instance, transparencyProps, goalValue, duration)
 	for _, prop in ipairs(transparencyProps) do
 		if instance[prop] ~= nil then
@@ -28,16 +32,14 @@ local function tweenTransparency(instance, transparencyProps, goalValue, duratio
 	end
 end
 
--- Fade in GUI
 for _, obj in ipairs(Executor:GetDescendants()) do
 	if obj:IsA("GuiObject") then
-		-- Set initial transparency to 1 (invisible)
+
 		if obj.BackgroundTransparency ~= nil then obj.BackgroundTransparency = 1 end
 		if obj:IsA("TextLabel") or obj:IsA("TextButton") or obj:IsA("TextBox") then
 			obj.TextTransparency = 1
 		end
 
-		-- Tween to visible
 		task.delay(0.1, function()
 			tweenTransparency(obj, {"BackgroundTransparency"}, 0, 0.6)
 			if obj:IsA("TextLabel") or obj:IsA("TextButton") or obj:IsA("TextBox") then
@@ -47,17 +49,13 @@ for _, obj in ipairs(Executor:GetDescendants()) do
 	end
 end
 
--- Services:
 local UserInputService = game:GetService("UserInputService")
-
--- Properties:
 
 LoadSound.Name = "LoadSound"
 LoadSound.Parent = Executor
-LoadSound.SoundId = "rbxassetid://129797567433050"  -- Replace with your own sound ID
-LoadSound.Volume = 1
+LoadSound.SoundId = "rbxassetid://129797567433050"  
+LoadSound.Volume = 5
 LoadSound.PlayOnRemove = false
-
 
 Executor.Name = "Executor"
 Executor.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -65,7 +63,7 @@ Executor.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 TopBar.Name = "TopBar"
 TopBar.Parent = Executor
-TopBar.BackgroundColor3 = Color3.fromRGB(85, 125, 255)
+TopBar.BackgroundColor3 = Color3.fromRGB(252, 140, 3)
 TopBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TopBar.BorderSizePixel = 0
 TopBar.Position = UDim2.new(0.287383169, 0, 0.305970162, 0)
@@ -91,7 +89,7 @@ TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
 TextLabel.Position = UDim2.new(0.0155902002, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 193, 0, 18)
-TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Font = Enum.Font.SourceSansBold
 TextLabel.Text = "<3 Internal"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 14.000
@@ -163,9 +161,6 @@ ImageButton.Image = "rbxassetid://116178165142170"
 UICorner.CornerRadius = UDim.new(0, 20)
 UICorner.Parent = ImageButton
 
--- Logic:
-
--- Script execution
 Execute.MouseButton1Click:Connect(function()
 	local scriptToExecute = ScriptBox.Text
 	local success, errorMessage = pcall(function()
@@ -176,12 +171,10 @@ Execute.MouseButton1Click:Connect(function()
 	end
 end)
 
--- Clear script box
 Clear.MouseButton1Click:Connect(function()
 	ScriptBox.Text = ""
 end)
 
--- Frame toggle
 local isOpen = true
 Close.MouseButton1Click:Connect(function()
 	isOpen = not isOpen
@@ -190,7 +183,6 @@ Close.MouseButton1Click:Connect(function()
 	Close.Position = isOpen and UDim2.new(0.927, 0, 0, 0) or UDim2.new(0.927, 0, -0.167, 0)
 end)
 
--- TopBar dragging
 local dragging = false
 local dragStart, startPos
 
@@ -220,11 +212,8 @@ UserInputService.InputChanged:Connect(function(input)
 	end
 end)
 
--- Play sound on GUI load
 LoadSound:Play()
 
-
--- Toggle Execute with [ key
 UserInputService.InputBegan:Connect(function(input, gameProcessed)
 	if gameProcessed then return end
 	if input.KeyCode == Enum.KeyCode.LeftBracket then
